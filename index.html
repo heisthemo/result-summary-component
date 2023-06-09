@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    Your Result 76 of 100 Great You scored higher than 65% of the people who have taken these tests. Summary Reaction 80
-    / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 / 100 Continue
+    <div class="card">
+      <div class="card__result">
+        <h3 class="card__result-heading">Your Result</h3>
+      </div>
+      <div class="circle">
+        <p class="card__score-text">
+          <strong class="card__score">76</strong> of 100 <strong class="card__rating">Great</strong> You scored higher
+          than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="card__summary">
+        <h3 class="card__summary-heading">Summary</h3>
+        <div class="card__summary-tab">Reaction 80 / 100</div>
+        <div class="card__summary-tab">Memory 92 / 100</div>
+        <div class="card__summary-tab">Verbal 61 / 100</div>
+        <div class="card__summary-tab">Visual 72 / 100</div>
+        <a href="#" class="btn">Continue</a>
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by

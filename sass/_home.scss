@@ -1,3 +1,15 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+body {
+  background-color: v.$color-white;
+}
+.card {
+  background-color: v.$color-blue-cobalt;
+  border-radius: 1rem;
+  @include m.positionCenter;
+  width: 50%;
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

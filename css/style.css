@@ -1,5 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card {
+  background-color: hsl(234, 85%, 45%);
+  border-radius: 1rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Hanken Grotesk", serif;
+  font-size: 1.8rem;
 }
 
 .attribution {
