@@ -3,12 +3,47 @@
 
 body {
   background-color: v.$color-white;
+  height: 100vh;
 }
 .card {
-  background-color: v.$color-blue-cobalt;
   border-radius: 1rem;
+  height: 70%;
   @include m.positionCenter;
   width: 50%;
+  &__result {
+    background-image: linear-gradient(v.$color-light-slate-blue, v.$color-light-royal-blue);
+    border-radius: 20px;
+    color: v.$color-light-lavender;
+    float: left;
+    height: 100%;
+    padding: 4rem;
+    width: 50%;
+  }
+  &__circle {
+    background-image: linear-gradient(v.$color-violet-blue, v.$color-persian-blue);
+    border-radius: 50%;
+    height: 20rem;
+    margin: 2rem auto;
+
+    position: relative;
+    width: 20rem;
+  }
+  &__score-text {
+    @include m.positionCenter;
+  }
+  &__score {
+    color: v.$color-white;
+  }
+  &__rating {
+    color: v.$color-white;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  &__summary {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
