@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.  
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building real projects.  
 
 ## Table of contents
 
@@ -8,6 +8,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 	- [Table of contents](#table-of-contents)
 	- [Overview](#overview)
 		- [Screenshots](#screenshots)
+ 		- [Links](#links)
 		- [Built With](#built-with)
 		- [What I learned?](#what-i-learned)
 		- [Continued Development](#continued-development)
@@ -21,6 +22,10 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ![Screenshot of the page on a desktop](./screenshots/Screenshot-1.png)
 ![Screenshot of the page on mobile](./screenshots/Screenshot-2.png)
 
+### Links 
+
+Live URL: (https://gleaming-dasik-974d82.netlify.app/)
+
 ### Built With
 
 - Semantic HTML5 markup
@@ -33,7 +38,7 @@ Didn't really learn anything new building this project. I really took this proje
 
 ### Continued Development
 
-In the future, I want to continue learning and implement respnsive design. I want to perfect using SASS mixins to implement responsive design.
+In the future, I want to continue learning and implementing responsive design. I want to perfect using SASS mixins to implement responsive design.
 
 ## Author
 
