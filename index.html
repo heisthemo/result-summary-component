@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
@@ -20,18 +20,26 @@
         </p>
       </div>
       <div class="card__summary">
-        <h3 class="card__summary-heading">Summary</h3>
-        <div class="card__summary-tab">Reaction 80 / 100</div>
-        <div class="card__summary-tab">Memory 92 / 100</div>
-        <div class="card__summary-tab">Verbal 61 / 100</div>
-        <div class="card__summary-tab">Visual 72 / 100</div>
-        <a href="#" class="btn">Continue</a>
+        <h3 class="card__heading">Summary</h3>
+        <div class="card__tab card__tab--reaction">
+          <span class="card__tab--reaction-text"><img class="card__tab-icon"  src="./assets/images/icon-reaction.svg"></img>Reaction</span><span class="card__tab-text"><strong class="card__tab-score">80</strong> / 100</span>
+        </div>
+        <div class="card__tab card__tab--memory">
+          <span class="card__tab--memory-text"><img src="./assets/images/icon-memory.svg" class="card__tab-icon">Memory</span><span class="card__tab-text"><strong class="card__tab-score">92</strong> / 100</span>
+        </div>
+        <div class="card__tab card__tab--verbal">
+          <span class="card__tab--verbal-text"><img src="./assets/images/icon-verbal.svg" class="card__tab-icon">Verbal</span><span class="card__tab-text"><strong class="card__tab-score">61</strong> / 100</span>
+        </div>
+        <div class="card__tab card__tab--visual">
+          <span class="card__tab--visual-text"><img src="./assets/images/icon-visual.svg" class="card__tab-icon">Visual</span><span class="card__tab-text"><strong class="card__tab-score">72</strong> / 100</span>
+        </div>
+        <a href="#" class="card__btn">Continue</a>
       </div>
     </div>
 
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="#"></a>.
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/heisthemo">heisthemo</a>.</p>
     </div>
   </body>
 </html>

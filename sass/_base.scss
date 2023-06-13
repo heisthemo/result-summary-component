@@ -1,11 +1,24 @@
+@use "mixins" as m;
+@use "variables" as v;
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  &:focus {
+    outline: none;
+  }
 }
 html {
   font-size: 62.5%;
+  scrollbar-width: thin;
   scroll-behavior: smooth;
+  @include m.respond(phone) {
+    font-size: 55%;
+  }
+}
+body {
+  user-select: none;
 }

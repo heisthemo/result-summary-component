@@ -6,30 +6,59 @@ body {
   height: 100vh;
 }
 .card {
+  @include m.respond(tab-land) {
+    box-shadow: none;
+    left: 0;
+    margin: 10rem auto;
+    position: static;
+    top: 0;
+    transform: translate(0, 0);
+  }
   border-radius: 1rem;
-  height: 70%;
+  box-shadow: 1rem 2rem 4rem 2rem v.$color-blue-pale;
+  max-height: 50rem;
   @include m.positionCenter;
-  width: 50%;
+  @include m.respond(phone) {
+    box-shadow: none;
+  }
+  max-width: 65rem;
   &__result {
     background-image: linear-gradient(v.$color-light-slate-blue, v.$color-light-royal-blue);
-    border-radius: 20px;
+    border-radius: 2rem;
     color: v.$color-light-lavender;
     float: left;
     height: 100%;
     padding: 4rem;
     width: 50%;
+    @include m.respond(phone) {
+      @include m.clearfix;
+      border-radius: 3rem;
+      display: block; 
+      left: -1px;
+      height: 65vh;
+      margin-bottom: 5rem;
+      position: absolute;
+      top: -20rem;
+      width: 98vw;
+    }
+   
   }
   &__circle {
-    background-image: linear-gradient(v.$color-violet-blue, v.$color-persian-blue);
+    background-image: linear-gradient(v.$color-blue-violet, v.$color-blue-persian);
     border-radius: 50%;
     height: 20rem;
-    margin: 2rem auto;
-
+    margin: 3rem auto;
     position: relative;
     width: 20rem;
+    @include m.respond(phone) {
+      height: 18rem;
+      width: 18rem;
+    }
+   
   }
   &__score-text {
     @include m.positionCenter;
+    
   }
   &__score {
     color: v.$color-white;
@@ -40,11 +69,90 @@ body {
     margin-bottom: 1rem;
   }
   &__summary {
+    border-radius: 2rem;
+    color: v.$color-blue-persian;
+    display: block; 
     float: left;
     width: 50%;
     height: 100%;
+    padding: 4rem;
+    @include m.respond(phone) {
+      @include m.clearfix;
+      height: 50vh;
+      position: relative;
+      top: 28rem;
+      width: 98vw;
+    }
+  }
+  &__heading {
+    color: v.$color-blue-grey;
+    margin-bottom: 3rem;
+  }
+  &__tab {
+    align-items: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &--reaction {
+      background-color: rgba(v.$color-light-red, 0.1);
+      &-text {
+        color: v.$color-light-red;
+      }
+    }
+    &--memory {
+      background-color: rgba(v.$color-orangey-yellow, 0.1);
+      &-text {
+        color: v.$color-orangey-yellow;
+      }
+    }
+    &--verbal {
+      background-color: rgba(v.$color-green-teal, 0.1);
+      &-text {
+        color: v.$color-green-teal;
+      }
+    }
+    &--visual {
+      background-color: v.$color-blue-pale;
+      &-text {
+        color: v.$color-blue-cobalt;
+      }
+    }
+    &-text {
+      color: rgba(v.$color-blue-violet, .4);
+    }
+    &-score {
+      color: v.$color-blue-grey;
+    }
+    &-icon {
+      margin-right: 1rem;
+      transform: translateY(.4rem);
+    }
+  }
+  &__btn {
+    background-color: v.$color-blue-grey;
+    border-radius: 3rem;
+    display: block;
+    margin: 4rem 0;
+    padding: 1.5rem 2rem;
+    &:link, &:visited {
+      color: v.$color-white;
+    }
+    &:focus, &:hover {
+      background-image: linear-gradient(v.$color-blue-violet, v.$color-blue-persian);
+    }
   }
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.attribution {
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+  position: absolute;
+  bottom: 0;
+  @include m.respond(phone) {
+    bottom: -20rem;
+  }
 }
